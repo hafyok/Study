@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     resources.getStringArray(R.array.na_content), getImageId(R.array.na_image_array)) )
             }
             R.id.id_sna -> Toast.makeText(this, "Id sna", Toast.LENGTH_SHORT).show()
-            R.id.id_history -> Toast.makeText(this, "Id history", Toast.LENGTH_SHORT).show()
+            R.id.id_history -> Toast.makeText(this, "Id history haha", Toast.LENGTH_SHORT).show()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
