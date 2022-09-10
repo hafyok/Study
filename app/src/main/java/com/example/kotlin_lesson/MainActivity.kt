@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     var adapter: MyAdapter? = null
     var nav_view: NavigationView? = null
-    //var rcView: RecyclerView? = null
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,12 +51,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     resources.getStringArray(R.array.fish_content), getImageId(R.array.fish_image_array)) )
             }
             R.id.id_na -> {
-                Toast.makeText(this, "Id na", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Id nalim", Toast.LENGTH_SHORT).show()
                 adapter?.updateAdapter(fillArras(resources.getStringArray(R.array.na),
                     resources.getStringArray(R.array.na_content), getImageId(R.array.na_image_array)) )
             }
-            R.id.id_sna -> Toast.makeText(this, "Id sna", Toast.LENGTH_SHORT).show()
-            R.id.id_history -> Toast.makeText(this, "Id history haha", Toast.LENGTH_SHORT).show()
+            R.id.id_sna -> Toast.makeText(this, "Id snasti", Toast.LENGTH_SHORT).show()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
