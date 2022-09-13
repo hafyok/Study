@@ -9,18 +9,20 @@
         <item android:title="@string/na"
             android:id="@+id/id_na"
             android:icon="@drawable/ic_na"/>
-
+        <item android:title="@string/sna"
+            android:id="@+id/id_sna"
+            android:icon="@drawable/ic_sna"/>
     </group>
 
-    <item android:title="Group 2">
-        <menu>
-            <item android:title="@string/sna"
-                android:id="@+id/id_sna"
-                android:icon="@drawable/ic_sna"/>
-            <item android:title="@string/history"
-                android:id="@+id/id_history"
-                android:icon="@drawable/ic_history"/>
-        </menu>
-    </item>
+<!--    <item android:title="Group 2">-->
+<!--        <menu>-->
+<!--            <item android:title="@string/sna"-->
+<!--                android:id="@+id/id_sna"-->
+<!--                android:icon="@drawable/ic_sna"/>-->
+<!--            <item android:title="@string/history"-->
+<!--                android:id="@+id/id_history"-->
+<!--                android:icon="@drawable/ic_history"/>-->
+<!--        </menu>-->
+<!--    </item>-->
 
 </menu>

@@ -46,16 +46,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.id_fish -> {
-                Toast.makeText(this, "Id fish", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Меню с рыбами", Toast.LENGTH_SHORT).show()
                 adapter?.updateAdapter(fillArras(resources.getStringArray(R.array.fish),
                     resources.getStringArray(R.array.fish_content), getImageId(R.array.fish_image_array)) )
             }
             R.id.id_na -> {
-                Toast.makeText(this, "Id nalim", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Меню с наживками", Toast.LENGTH_SHORT).show()
                 adapter?.updateAdapter(fillArras(resources.getStringArray(R.array.na),
                     resources.getStringArray(R.array.na_content), getImageId(R.array.na_image_array)) )
             }
-            R.id.id_sna -> Toast.makeText(this, "Id snasti", Toast.LENGTH_SHORT).show()
+            //R.id.id_sna -> Toast.makeText(this, "Id snasti", Toast.LENGTH_SHORT).show()
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
